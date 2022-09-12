@@ -8,7 +8,7 @@ import "antd/dist/antd.css";
 function App(): JSX.Element {
   return (
     <Provider store={store}>
-      <div className="App">
+      <div className="App ">
         <Home />
       </div>
     </Provider>
