@@ -1,0 +1,268 @@
+// specific
+.section-welcome-mobile {
+    height: 100vh;
+    background: {
+        image: url(/assets/img/section-welcome.jpg);
+        repeat: no-repeat;
+        size: cover;
+        position: center;
+    }
+
+    overflow: hidden;
+    .wm-layer-wrap {
+        // position: relative;
+        .welcome-mobile {
+            &-layer-characters {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                overflow: hidden;
+                z-index: 5;
+                .characters-welcome-img {
+                    margin-bottom: 130px;
+                    width: 128vw;
+                    max-width: 600px;
+                    transform: scale(1);
+                }
+            }
+            &-layer-fade-bottom {
+                position: absolute;
+                height: 250px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 6;
+                width: 100vw;
+                // background-image: linear-gradient(to bottom, rgba(36, 39, 55, 0), rgba(36, 39, 55, 1) 90%);
+                .wt-mobile {
+                    height: 111px;
+                    margin-top: 55px;
+                }
+            }
+        }
+    }
+}
+// global responsive
+@media screen and (max-width: 766px) {
+    .complex-popup {
+        .button-override {
+            margin-bottom: 11.2% !important;
+            img {
+                width: 5rem !important;
+            }
+        }
+    }
+    .video-frame {
+        width: 100% !important;
+    }
+    .iframe-video {
+        height: 260px !important;
+    }
+    .container {
+        overflow: hidden !important;
+    }
+    .text-description {
+        font-size: 10pt !important;
+    }
+    .ha-header {
+        position: fixed;
+        z-index: 150;
+        &-content {
+            background-color: rgba(255, 255, 255, 0.8) !important;
+            backdrop-filter: blur(10px);
+            // backdrop-filter: none !important;
+            border-radius: 0px !important;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            z-index: 140;
+            .logo {
+                width: 72px !important;
+                padding: 10px 0px !important;
+            }
+            .items {
+                padding: 5px 12px;
+            }
+        }
+        &.contract-bar-padding {
+            margin-top: 45px !important;
+        }
+    }
+    .table-economy {
+        tr {
+            border-width: 3px !important;
+        }
+        thead {
+            tr {
+                border-width: none !important;
+                border-color: #0c292f !important;
+            }
+            th {
+                font-size: 6.5pt !important;
+                padding: 5px !important;
+            }
+        }
+        tbody {
+            td {
+                font-size: 7pt !important;
+                padding: 5px 5px !important;
+            }
+        }
+        tfoot {
+            tr {
+                border-width: none !important;
+                border-color: #0c292f !important;
+            }
+            th {
+                font-size: 9pt !important;
+            }
+        }
+    }
+
+    .section {
+        &-tokenconomic {
+            .tokenconomic-board {
+                text-align: center !important;
+                h6 {
+                    font-size: 9pt !important;
+                    line-height: 6pt;
+                }
+                padding: 80px 30px 80px 30px !important;
+                width: 105% !important;
+                height: 520px !important;
+                position: relative;
+                background: {
+                    image: url(/assets/img/decor/tokenconomic-mobile-frame.png) !important;
+                }
+            }
+            .tokenconomic-item {
+                &-icon {
+                    padding: 5px !important;
+                    width: 100px !important;
+                }
+                .text-title {
+                    font-size: 10pt !important;
+                    line-height: 10pt !important;
+                }
+                .text-description {
+                    font-size: 8.5pt !important;
+                    line-height: 13pt !important;
+                }
+            }
+        }
+        &-partner {
+            .partner-board {
+                padding: 30px !important;
+                // background: {
+                //     image: url(/assets/img/decor/partner-frame-mobile.png) !important;
+                //     size: 100% 100% !important;
+                // }
+                &-item {
+                    width: 45% !important;
+                    padding: 15px !important;
+                    min-width: 125px !important;
+                }
+            }
+        }
+        &-feature {
+            background: {
+                image: url(/assets/img/section-feature.jpg);
+                repeat: no-repeat;
+                size: cover;
+            }
+            .feature-title {
+                font-size: 11pt !important;
+            }
+            .feature-description {
+                font-size: 8pt !important;
+            }
+            .feature-item-icon {
+                padding: 8px 0px !important;
+                height: 45px !important;
+            }
+        }
+        &-character-system {
+            height: auto !important;
+            .character-row-top {
+                position: relative !important;
+                width: auto !important;
+            }
+            .character-row-bottom {
+                height: auto !important;
+            }
+            .character-item {
+                &-image {
+                    width: 250px !important;
+                }
+            }
+        }
+        &-about-us {
+            padding: 30px 0 30px 0 !important;
+        }
+    }
+    .floating-button {
+        margin-right: 20px !important;
+        margin-bottom: 20px !important;
+    }
+    .contract-bar {
+        background-color: #b46005;
+        position: relative;
+        z-index: 160;
+        height: 45px;
+        font-size: 6.2pt !important;
+        &-close {
+            margin-right: 5px !important;
+        }
+        &-item {
+            padding-bottom: 5px;
+            border-right: 0px !important;
+        }
+        &-social-icon {
+            width: 15px !important;
+        }
+    }
+
+    .count-down {
+        &-content {
+            padding: 30px !important;
+            .logo {
+                height: 50px !important;
+            }
+            &--text {
+                font-size: 1rem !important;
+            }
+            &--clock {
+                padding: 5px !important;
+                &--block {
+                    width: 40px !important;
+                    height: 40px !important;
+                    font-size: 18px !important;
+                }
+                &--spr {
+                    padding-bottom: 20px !important;
+                }
+            }
+            &--des {
+                padding: 5px !important;
+            }
+            .button-popup {
+                padding: 0.2rem 0.5rem !important;
+                margin: 0.3rem !important;
+                font-size: 10pt !important;
+            }
+        }
+    }
+
+    .popup-launching {
+        &--overlay {
+            .clock-arena {
+                .clock {
+                    font-size: 1.2rem !important;
+                }
+            }
+        }
+    }
+}

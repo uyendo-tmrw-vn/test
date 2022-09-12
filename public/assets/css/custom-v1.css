@@ -1,0 +1,63 @@
+#preloader {
+  z-index: 9999;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/assets/img/loader-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1s;
+}
+.effect-class {
+  position: relative;
+}
+#dude {
+  position: absolute;
+  z-index: 10;
+  width: 210px;
+  animation: effect-dude 2.3s infinite alternate;
+}
+#effect {
+  /* position: absolute; */
+  width: 210px;
+  z-index: 1;
+  animation: effect-hue 5s infinite alternate, effect-op 1s;
+}
+@keyframes effect-dude {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+@keyframes effect-hue {
+  from {
+    filter: hue-rotate(0);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+@keyframes effect-op {
+  from {
+    filter: opacity(0);
+  }
+  to {
+    filter: opacity(1);
+  }
+}
+@keyframes yo-yo {
+  from {
+    transform: rotate(-0deg);
+    /* top: 0; */
+  }
+  to {
+    transform: rotate(-360deg);
+    /* top: 120px; */
+  }
+}
