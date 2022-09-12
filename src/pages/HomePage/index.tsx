@@ -31,9 +31,6 @@ const Home: React.FC = () => {
   const TokenConomic = lazy(
     () => import("pages/HomePage/Sections/TokenConomic/index")
   );
-  const TokenMetric = lazy(
-    () => import("pages/HomePage/Sections/TokenMetric/index")
-  );
   const Partner = lazy(() => import("pages/HomePage/Sections/Partner/index"));
   const RoadMap = lazy(() => import("pages/HomePage/Sections/RoadMap/index"));
   const Team = lazy(() => import("pages/HomePage/Sections/Team/index"));
@@ -64,8 +61,7 @@ const Home: React.FC = () => {
         <CharacterSystem />
         <NFTItem />
         <Feature />
-        <TokenConomic />
-        {/* <TokenMetric /> */}
+        {/* <TokenConomic /> */}
         <Partner />
         <RoadMap />
         <Team />
