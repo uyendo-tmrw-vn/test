@@ -210,14 +210,14 @@ const Header: React.FC = () => {
               >
                 <MenuOutlined />
               </div>
-              <SwipeableDrawer
+              {/* <SwipeableDrawer
                 anchor="right"
                 open={state["right"]}
                 onOpen={toggleDrawer("right", true)}
                 onClose={toggleDrawer("right", false)}
               >
                 {list("right")}
-              </SwipeableDrawer>
+              </SwipeableDrawer> */}
             </div>
           </div>
         </div>

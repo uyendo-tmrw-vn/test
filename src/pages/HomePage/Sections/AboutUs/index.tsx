@@ -7,10 +7,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { setPlayingVideo } from "redux/slices/counter";
 import { useDispatch, useSelector } from "react-redux";
 
-interface Props {}
+interface Props { }
 
 var timelineVideo = gsap.timeline();
-export default function AboutUs({}: Props): ReactElement {
+export default function AboutUs({ }: Props): ReactElement {
   const dispatch = useDispatch();
   const isPlayingVideo = useSelector((state) => state.counter.isPlayingVideo);
   const [refYoutube, setRefYoutube] = useState(null);
@@ -141,16 +141,7 @@ export default function AboutUs({}: Props): ReactElement {
           {/* video */}
           <div className="my-3 px-1 px-md-5 video-frame">
             <div className="iframe-video-wrapper">
-              {/* <div id="iframe-video"></div> */}
-              {/* <iframe
-                className="iframe-video"
-                src="https://www.youtube.com/embed/FjrvOPo4-8g?playlist=FjrvOPo4-8g&autoplay=1&loop=1"
-                title="Hero Arena"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe> */}
-              <YouTube
+              {/* <YouTube
                 ref={testRef}
                 videoId="FjrvOPo4-8g" // defaults -> null
                 id="FjrvOPo4-8g"
@@ -161,7 +152,7 @@ export default function AboutUs({}: Props): ReactElement {
                 onReady={_onReady}
                 onPause={_onPause}
                 onPlay={_onPlay}
-              />
+              /> */}
             </div>
           </div>
         </div>

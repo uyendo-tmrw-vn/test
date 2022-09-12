@@ -65,7 +65,7 @@ const Home: React.FC = () => {
         <NFTItem />
         <Feature />
         <TokenConomic />
-        <TokenMetric />
+        {/* <TokenMetric /> */}
         <Partner />
         <RoadMap />
         <Team />

@@ -4,7 +4,7 @@ import TokenDistribution from "./TokenDistribution";
 import { MetricData } from "./MetricData";
 import { useMediaQuery } from "react-responsive";
 
-interface Props {}
+interface Props { }
 interface ILegendItem {
   className: string;
   type: string;
@@ -22,7 +22,7 @@ const LegendItem = (Item: ILegendItem) => {
     </div>
   );
 };
-export default function TokenMetric({}: Props): ReactElement {
+export default function TokenMetric({ }: Props): ReactElement {
   const isDesktop = useMediaQuery({
     query: "(min-width: 768px)",
   });
@@ -34,7 +34,7 @@ export default function TokenMetric({}: Props): ReactElement {
             <div className="col-lg-6 p-lg-3 p-0" data-aos="fade-right">
               <div className="text-center">
                 <h3 className="color-white">Token Allocation</h3>
-                <TokenAllocation />
+                {/* <TokenAllocation /> */}
               </div>
             </div>
             <div className="col-lg-6 p-lg-3 p-0" data-aos="fade-left">
